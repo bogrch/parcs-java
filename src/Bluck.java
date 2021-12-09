@@ -3,7 +3,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.io.File;
-import parcs.*;
+
+import parcs.AMInfo;
+import parcs.channel;
+import parcs.point;
+import parcs.task;
 
 public class Bluck {
 
@@ -11,7 +15,7 @@ public class Bluck {
     public static void main(String[] args) throws Exception {
         task curtask = new task();
         curtask.addJarFile("MyClass.jar");
-        List<String> data = readData(curtask.findFile("input"));
+        List<String> data = readData(curtask.findFile("input2"));
         int n = Integer.parseInt(data.get(0));
 
         AMInfo info = new AMInfo(curtask, null);
