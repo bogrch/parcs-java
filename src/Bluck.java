@@ -15,7 +15,7 @@ public class Bluck {
     public static void main(String[] args) throws Exception {
         task curtask = new task();
         curtask.addJarFile("MyClass.jar");
-        List<String> data = readData(curtask.findFile("input2"));
+        List<String> data = readData(curtask.findFile("input"));
         int n = Integer.parseInt(data.get(0));
 
         AMInfo info = new AMInfo(curtask, null);
