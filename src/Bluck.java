@@ -36,7 +36,7 @@ public class Bluck {
             for (int j = first; j < last; j++) {
                 d[j - first] = data.get(j);
             }
-            System.out.println("data sent is " + Arrays.toString(d));
+            //  System.out.println("data sent is " + Arrays.toString(d));
             channels.get(i).write(d);
         }
 
@@ -46,7 +46,7 @@ public class Bluck {
 
         for (int i = 0; i < n; i++) {
             String[] ans = (String[]) channels.get(i).readObject();
-            System.out.println("Ans from " + i + " channel is " + Arrays.toString(ans));
+          //  System.out.println("Ans from " + i + " channel is " + Arrays.toString(ans));
             answer.addAll(Arrays.asList(ans));
         }
         answer.forEach(System.out::println);
