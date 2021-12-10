@@ -49,7 +49,7 @@ public class Bluck {
           //  System.out.println("Ans from " + i + " channel is " + Arrays.toString(ans));
             answer.addAll(Arrays.asList(ans));
         }
-        answer.forEach(System.out::println);
+      //  answer.forEach(System.out::println);
         System.out.println("End of task");
         System.out.println("Calculating duration: " + ((System.nanoTime() - startTime) / 1000000) + "ms");
         curtask.end();
